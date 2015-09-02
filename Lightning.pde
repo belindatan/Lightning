@@ -1,7 +1,7 @@
 void setup()
 {
   size(600,600);
-strokeWeight(5);
+strokeWeight(4);
 background(0,80,260);
 
 }
@@ -11,13 +11,13 @@ background(0,80,260);
   int y2=150;
 void draw()
 {
-	stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
 	x1=0;
 	while (x2<600)
 	{
 		x2=x1+(int)(Math.random()*9);
 		y2=y1+(int)(Math.random()*18)-9;
-		line (x1, y1, x2, y2);
+		stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+	line (x1, y1, x2, y2);
 		x1=x2;
 		y1=y2;
 	}
